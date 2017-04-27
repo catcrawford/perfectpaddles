@@ -1,13 +1,47 @@
 .container {
   max-width: 1120px;
   margin: 0 auto;
-  background: rgba(0,0,0,0.1)
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
+
 img{
   max-width: 100%;
 }
+.header_logo{
+
+}
+.header_nav{
+
+}
+.header_nav-list{
+
+}
+.header_nav-list-item{
+
+}
+.header_nav-link{
+
+}
 .banner {
 
+}
+.banner__title{
+  text-align: center;
+}
+.banner__span{
+  display: block;
+}
+ .banner__span--enjoy{
+   text-transform: uppercase;
+   font-size: 16px;
+ }
+.banner__span--outdooors{
+  font-size: 60px;
+}
+.banner__span--water{
+  font-size: 30px;
 }
 .btn-signup {
   border: 2px solid;
@@ -23,4 +57,15 @@ img{
     border: none;
     margin: 50px auto;
     display: inline;
+    }
+
+    @media (min-width: 600px){
+      img {
+        max-width: 40%;
+      }
+    }
+    @media (min-width: 1100px){
+      img {
+        max-width: 30%;
+      }
     }

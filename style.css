@@ -10,25 +10,32 @@ img{
   max-width: 100%;
 }
 .header_logo{
+background-color: black;
 
 }
 .header_nav{
+background-color: black;
 
 }
 .header_nav-list{
-
+color: white;
+text-transform: uppercase;
+font-weight: bold;
 }
 .header_nav-list-item{
+
 
 }
 .header_nav-link{
 
 }
 .banner {
-
+background-image: url("images/kayak-bkgd.jpg");
+background-position: center;
 }
 .banner__title{
   text-align: center;
+  color: white;
 }
 .banner__span{
   display: block;
@@ -42,6 +49,17 @@ img{
 }
 .banner__span--water{
   font-size: 30px;
+}
+.banner__lead{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 9px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+
+}
+.button {
+position: relative;
 }
 .btn-signup {
   border: 2px solid;
@@ -57,7 +75,11 @@ img{
     border: none;
     margin: 50px auto;
     display: inline;
+    position: relative;
+      top: 40%;
+      bottom: 40%;
     }
+
 
     @media (min-width: 600px){
       img {

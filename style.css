@@ -1,4 +1,5 @@
 
+
 .container {
   max-width: 1120px;
   margin: 0 auto;
@@ -8,8 +9,8 @@
 img{
   max-width: 100%;
 }
-h2{
-text-align: center;
+.location_tittle{
+  text-align: center;
 }
 
 
@@ -40,7 +41,7 @@ display: inline-block;
 padding: 15px;
 }
 .header_nav-link{
-
+color: white;
 }
 
 
@@ -49,7 +50,7 @@ padding: 15px;
     position: absolute;
     right: 0;
     top: 0;
-  }  
+  }
 }
 
 
@@ -110,6 +111,19 @@ position: relative;
     display: block;
     }
 
+.rentals{
+  text-align: center;
+}
+
+.pricetable {
+  align-items: center;
+}
+
+
+
+
+
+@media (min-width: 600px) {
 .rental_p{
   width: 50%;
   float: left;
@@ -118,10 +132,17 @@ position: relative;
 width: 50%;
   float: right;
 }
+}
 
+.about{
+  text-align: center;
+}
+.location{
+  text-align: center;
+}
 
-    .map{
-      width: 100%;
+.map{
+    width: 100%;
     }
 .socialmedia{
   background-color: black;

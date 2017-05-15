@@ -4,6 +4,12 @@
   margin: 0 auto;
   position: relative;
   }
+  .flexie {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
 body{
 font-size: 16px;
 font-family: arial;
@@ -261,13 +267,7 @@ flex-flow: row wrap;
         margin: 2px;
         width: 30%;
         }
-      .rentals{
-        display: flex;
-        align-content: space-around;
-        justify-content: center;
-      }
 
-      }
       .table{
         width: 90%;
 
@@ -281,12 +281,13 @@ flex-flow: row wrap;
       .socialmedia p {
         text-align: left;
         max-width: 40%;
-}
-      footer nav{
+      }
+
+      footer nav {
         display: flex;
-        flex-direction: column;
-        /*justify-content: */
-            }
+        flex-direction: row-reverse;
+        justify-content: center;
+          }
 
 
 /*Desktop */

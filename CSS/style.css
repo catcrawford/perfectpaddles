@@ -40,7 +40,6 @@ font-size: 16px;
 font-family: 'Karla';
 font-weight: normal;
 font-style: normal;
-box-sizing: border-box;
 color: #2d2d2d;
 }
 
@@ -127,26 +126,26 @@ text-decoration: none;
 .banner__span--outdooors{
   font-family: 'Pacifico';
   font-size: 60px;
+  text-shadow: 2px 2px 5px #999;
 }
 .banner__span--water{
   font-family: 'Pacifico';
   font-size: 30px;
+  text-shadow: 2px 2px 5px #999;
+
 }
 .banner_lead{
   background-color: rgba(0, 0, 0, 0.5);
-  max-width: inherit;
   color: white;
   font-size: 16px;
   text-align: center;
-  width: 75%;
+  width: 76%;
   margin: auto;
-  padding: 3px;
+  padding: 1px;
   line-height: 120%;
+}
 
-}
-.banner_lead p{
-  display: inline;
-}
+
 .button {
 position: relative;
 }
@@ -186,6 +185,7 @@ flex-flow: row wrap;
 .images img{
   margin: 2px;
   width: 100%;
+  box-shadow: 1px 0px 5px 1px #666;
 }
 
 .rental_p p {
@@ -194,7 +194,8 @@ flex-flow: row wrap;
   text-align: left;
 }
 .phone{
-  color: #b64036;
+  color:#e2574c;
+  font-weight: bold;
 }
 
 .pricetable, .pricetable td, .pricetable td {
@@ -251,13 +252,15 @@ flex-flow: row wrap;
 }
 
 .socialmedia{
-    background-color: black;
+    background-color: #2d2d2d;
     color: white;
     padding: 10px;
     text-align: center;
     display: block;
   }
-
+.mail{
+  margin-left: 10px;
+}
 .grey {
   margin-bottom: 5px;
   padding: 10px;
@@ -268,7 +271,7 @@ flex-flow: row wrap;
 /* Tablet*/
     @media (min-width: 600px){
       .images img {
-        max-width: 40%;
+        max-width: 30%;
         padding: 10px;
       }
         .banner_lead {
@@ -277,9 +280,6 @@ flex-flow: row wrap;
           flex-flow: row;
           }
 
-          .banner_lead p{
-            display: inline-block;
-        }
           .header_nav {
             position: absolute;
             right: 0;
@@ -299,15 +299,21 @@ flex-flow: row wrap;
             margin: 5px;
           }
 
-            .images img{
-              width: 30%;
-            }
+          .flexie {
+            display: flex;
+            justify-content: space-around;
+          }
+          .pricetable{
+            max-width: 50%
+          }
+          .socialmedia {
+            display: flex;
+            justify-content: space-between;
+          }
     }
 
     /*Desktop media query */
     @media (min-width: 1100px){
-      img {
-        max-width: 30%;
-        padding: 10px;
+
       }
     }

@@ -1,12 +1,45 @@
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  src: url('fonts/Pacifico.ttf') format('truetype');
+}
 
 .container {
   max-width: 1120px;
   margin: 0 auto;
   position: relative;
   }
-body{
+
+body {
 font-size: 16px;
-font-family: arial;
+font-family: 'Karla';
+font-weight: normal;
+font-style: normal;
 box-sizing: border-box;
 color: #2d2d2d;
 }
@@ -15,10 +48,12 @@ img{
   max-width: 100%;
 }
 .h1, h2{
+  font-family: 'Pacifico';
   text-align: center;
   font-weight: bold;
   color: #646464;
   padding: 15px;
+  font-size: 30px;
 }
 
 p {
@@ -28,8 +63,7 @@ p {
 }
 
 a {
-  text-decoration: none;
-  color: #e2574c;
+  color: white;
 }
 
 
@@ -60,38 +94,15 @@ color: white;
 text-decoration: none;
 }
 
-/*Tablet media queries header*/
-@media (min-width: 600px) {
-  .header_nav {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
-
-@media (min-width: 600px){
-  .header_logo{
-    display: flex;
-    justify-content: flex-start;
-  }
-
-.header {
-  justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-  .header_nav-list-item {
-    margin: 5px;
-  }
-}
 
 .banner {
-  background: linear-gradient(
+  background:
+  linear-gradient(
     /*to top,*/
     rgba(0, 0, 0, .40) 0%,
     rgba(0, 0, 0, .25) 100%
   ),
-  url("images/kayak-bkgd.jpg");
+  url("../images/kayak-bkgd.jpg");
   background-size: cover;
   background-position: center;
   max-width: 1120px;
@@ -100,10 +111,11 @@ text-decoration: none;
 
 }
 
-.banner__title{
+.banner__title {
   text-align: center;
   color: white;
   padding: 50px;
+  font-family: 'Karla';
 }
 .banner__span{
   display: block;
@@ -113,9 +125,11 @@ text-decoration: none;
    font-size: 16px;
  }
 .banner__span--outdooors{
+  font-family: 'Pacifico';
   font-size: 60px;
 }
 .banner__span--water{
+  font-family: 'Pacifico';
   font-size: 30px;
 }
 .banner_lead{
@@ -157,18 +171,6 @@ position: relative;
   transition-property: background font;
 }
 
-@media (min-width: 600px){
-  .banner_lead {
-    display: flex;
-    align-items: center;
-    flex-flow: row;
-    }
-
-    .banner_lead p{
-      display: inline-block;
-  }
-
-
 
 
 .about{
@@ -186,23 +188,14 @@ flex-flow: row wrap;
   width: 100%;
 }
 
-@media (min-width: 600px){
-  .images img{
-    width: 30%;
-  }
-
-    /*.table {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 2px;
-    margin: 1px 6px;*/
-}
-.rental_p{
+.rental_p p {
   display: block;
   padding: 5px;
+  text-align: left;
 }
-
+.phone{
+  color: #b64036;
+}
 
 .pricetable, .pricetable td, .pricetable td {
   border: 1px solid #c8c8c8;
@@ -234,27 +227,6 @@ flex-flow: row wrap;
     width: 100%;
     padding: 5px;
 }
-
-
-/*@media (min-width: 600px){
-
-  .rentals{
-    display: flex;
-    justify-content: space-around;
-  }
-  .rentals h{
-    text-align: center;
-    padding: 15px;
-  }
-  .pricetable{
-    width: 50%;
-  }
-  .rental_p p {
-    text-align: left;
-  }
-
-  }*/
-
 
 .map{
     width: 100%;
@@ -299,7 +271,40 @@ flex-flow: row wrap;
         max-width: 40%;
         padding: 10px;
       }
+        .banner_lead {
+          display: flex;
+          align-items: center;
+          flex-flow: row;
+          }
+
+          .banner_lead p{
+            display: inline-block;
+        }
+          .header_nav {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          .header_logo{
+            display: flex;
+            justify-content: flex-start;
+          }
+
+        .header {
+          justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+          .header_nav-list-item {
+            margin: 5px;
+          }
+
+            .images img{
+              width: 30%;
+            }
     }
+
+    /*Desktop media query */
     @media (min-width: 1100px){
       img {
         max-width: 30%;

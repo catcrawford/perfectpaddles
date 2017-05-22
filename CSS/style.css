@@ -14,14 +14,14 @@
   font-family: 'Karla';
   src: url('fonts/Karla-BoldItalic.ttf') format('truetype');
   font-weight: bold;
-  font-style: italic, oblique;
+  font-style: italic;
 }
 
 @font-face {
   font-family: 'Karla';
   src: url('fonts/Karla-Italic.ttf') format('truetype');
   font-weight: normal;
-  font-style: italic, oblique;
+  font-style: italic;
 }
 
 @font-face {
@@ -38,7 +38,7 @@
 body {
 font-size: 16px;
 font-family: 'Karla';
-font-weight: normal;
+font-weight: bold;
 font-style: normal;
 color: #2d2d2d;
 }
@@ -51,12 +51,12 @@ img{
   text-align: center;
   font-weight: bold;
   color: #646464;
-  padding: 15px;
-  font-size: 30px;
+  padding: 20px;
+  font-size: 40px;
 }
 
 p {
-  line-height: 186%;
+  line-height: 160%;
   margin-bottom: 25px;
   text-align: center;
 }
@@ -126,10 +126,14 @@ text-decoration: none;
 .banner__span--outdooors{
   font-family: 'Pacifico';
   font-size: 60px;
+  font-weight: lighter;
+  padding: 15px;
   text-shadow: 2px 2px 5px #999;
 }
 .banner__span--water{
   font-family: 'Pacifico';
+  font-weight: lighter;
+  padding: 10px;
   font-size: 30px;
   text-shadow: 2px 2px 5px #999;
 
@@ -138,6 +142,7 @@ text-decoration: none;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: 16px;
+  font-weight: normal;
   text-align: center;
   width: 76%;
   margin: auto;
@@ -157,7 +162,8 @@ position: relative;
     font-weight: bold;
     text-transform: uppercase;
     padding: 15px;
-    font-family: arial;
+    font-family: Karla;
+    font-weight: normal;
     font-size: 14px;
     text-decoration: none;
     border: none;
@@ -254,9 +260,8 @@ flex-flow: row wrap;
 .socialmedia{
     background-color: #2d2d2d;
     color: white;
-    padding: 10px;
+    padding: 39px 50px;
     text-align: center;
-    display: block;
   }
 .mail{
   margin-left: 10px;
@@ -267,6 +272,15 @@ flex-flow: row wrap;
   color: #999;
   display: block;
 }
+.sociallinks{
+  display: flex;
+  justify-content: center;
+}
+.socialtext{
+  display: none;
+}
+
+
 
 /* Tablet*/
     @media (min-width: 600px){
@@ -298,13 +312,21 @@ flex-flow: row wrap;
           .header_nav-list-item {
             margin: 5px;
           }
+          .banner_lead{
+            width: 98%;
+            padding: 8px;
+          }
 
           .flexie {
             display: flex;
             justify-content: space-around;
           }
           .pricetable{
-            max-width: 50%
+            max-width: 45%;
+            margin: 7px 15px;
+          }
+          .rental_p{
+            margin: 10px;
           }
           .socialmedia {
             display: flex;
@@ -314,13 +336,34 @@ flex-flow: row wrap;
             text-align: left;
           }
           .sociallinks{
-            text-align: right;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            line-height: 33px;
+          }
+          .socialtext{
+            display: inline;
+            text-decoration: none;
 
+          }
+          li a{
+            text-decoration: none;
           }
     }
 
 
     /*Desktop media query */
-    @media (min-width: 1100px){
-
+    @media (min-width: 1400px){
+      .banner {
+        max-width: none;
       }
+      .socialmedia{
+        max-width: none;
+      }
+      .sociallinks{
+        padding: 10px;
+      }
+      .banner_lead{
+        width: 88%;
+      }
+}
